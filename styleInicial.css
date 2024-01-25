@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('./imagens/tela\ de\ fundo.png');
+    background-size: cover;
+}
+.aberturaLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+img{
+    width: 530.3px;
+    height: 181px;
+}
+.botaoAbertura{
+    background: #bf90e0;
+    width:382px ;
+    height: 72px;
+    margin: 50px;
+    border-radius:16px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    /* display: flex; */
+}
+.botaoAbertura:hover{
+    background-color: #d1bede;
+}
+
+/* ------------Abertura Fim----------------------- */
+/* ------------login inicio----------------------- */
+.loginPrincipal{
+    display: flex;
+/* aqui */
+}
+.aberturaLogo2{
+    margin: 200px 0 0 100px;
+/* aqui */
+}
+.entradaDeLogin{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    margin: 0 0 0 10em;
+    border-radius: 32px 0 0 32px;
+}
+/* colocar um display none aqui*/
+.conteudoDeLogin{
+    margin:70px 0 0 60px;
+    align-items: center;
+}
+.sejaBemVindo{
+    padding: 30px;
+    margin: 100px 0 0 0px;
+    text-align: center;
+}
+.sejaBemVindo h3{
+    color:#576aa3;
+    font-size: 20px;
+}
+.sejaBemVindo h1{
+    font-size: 32px;
+    color: #502B6B;
+}
+.loginEntrada{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.inputGroup {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 110px;
+}
+input{
+    width: 300px;
+    height: 42px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: ;
+}
+input:hover{
+    border:1px solid green;
+
+}
+.botaoLogin{
+    background: #541cb688;
+    width:300px;
+    height: 52px;
+    margin: 20px;
+    border-radius:16px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+}
+.botaoLogin:hover{
+    background-color: #d1bede;
+}
+
+/* ------------login FIm----------------------- */
