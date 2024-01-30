@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    font-family: "Roboto", sans-serif;
+    }
+
+.header {
+
+    height: 15em;
+    background-size: cover;    
+}
+.headerInfor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 50px;
+    margin: 0 150px;
+}
+.d-foto {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.foto {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 1px 0px 0px 4px #e30606;
+    margin-right: 20px; 
+}
+.headerInfor h3{
+    color: #502B6B;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #7290cd;
+}
+
+/* --------------------------------- */
+
+
+
+.menuLateral{
+    border: 1px solid yellow;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista1 {
+    display: flex;
+    width: 50px;
+    height:50px;
+    background-color: #502B6B;
+    margin-left: ;
+    padding: 5px;
+}
+
+li:hover{
+    background-color: darkgray;
+
+}
+/* 
+.lista{
+}
+
+.listalink{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.nomePricipal{
+    color: blue;
+}
+
+.eu{
+    width: 25%;
+    height: 25%;
+}
+
+.email{
+    width: 200px;
+}
+
+.telf{
+    width: 200px;
+} */

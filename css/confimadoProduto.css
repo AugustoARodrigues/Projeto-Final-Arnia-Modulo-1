@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    font-family: "Roboto", sans-serif;
+    }
+
+.header {
+
+    height: 15em;
+    background-size: cover;    
+}
+.headerInfor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 50px;
+    margin: 0 150px;
+}
+.d-foto {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.foto {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 1px 0px 0px 4px #e30606;
+    margin-right: 20px; 
+}
+.headerInfor h3{
+    color: #502B6B;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #7290cd;
+}
+
+/* ----------------------------------------------------------- */
+
+.inforProdutos{
+    display: flex;
+    justify-content: center;
+}
+.grud{
+    margin: 0px 100px;
+}
+
+.descricaoProduto h2{
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.imagemProduto{
+    display: flex;
+}
+.imagemProduto .fone{
+    width:100px ;
+    height:100px ;
+}
+.descFinal{
+    margin-left: 10px;
+    text-align: left;
+}
+.imagemProduto p{
+    font-weight: bold;
+    width: 200px;
+    color: #616161;
+}
+.imagemProduto .qntDiamantes{
+    padding: 15px 0; 
+    color: #502B6B;
+    font-size: 25px;
+}
+
+.descricaoProduto{
+    flex-direction: column;
+    margin: 30px 0px;
+    width: 35%;
+    height:  420px;
+}
+.descricaoProduto .qntDiamantes img{
+    margin-left: 5px; 
+}
+.descricaoProduto .descricaoProdutoexato{
+    margin-left: 5px; 
+    padding: 5px 0;
+    color: #616161;
+    font-weight: 400px;
+    word-spacing: 5px;
+    font-size: 18px;
+    width:  450px;
+    border: none;
+    font-family: 'Sora', sans-serif;
+}
+.meuSaldo{
+    width:150px ;
+    height: 30px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 1px  1px gray;
+}
+
+.voltarProduto {
+    color:#361d49;
+    border: 4px solid  #502B6B;
+    margin-top: 45px;
+    width: 300px;
+    height: 80px;
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: #ffffff;
+}

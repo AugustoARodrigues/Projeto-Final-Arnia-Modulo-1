@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    background-image: url('../imagens/tela_de_fundo_home.png');
+    /* background-color: #1F2A4D; */
+    height: 44.5em;
+    background-size: cover;    
+}
+.headerInfor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: 0 150px;
+}
+.d-foto {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.foto {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 1px 0px 0px 4px #e30606;
+    margin-right: 20px; 
+}
+.headerInfor h3{
+    color: #fff;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #7290cd;
+}
+
+/* ----------------------------------------------------------- */
+.cabecario{
+    position: relative;
+}
+.cabecarioSaldo{
+text-align: center;
+color: #fff;
+}
+.cabecarioSaldo .saldo{
+    padding: 5px;
+    text-align: center;
+}
+.numeroDeSaldo{
+    font-family: 'Sixtyfour', sans-serif;
+    font-size: 80px;
+    margin-top: 25px;
+    /* margin-left: 2%; */
+}
+
+.cabecarioSaldo h3{
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.cabecarioSaldo img{
+    width: 70px;
+    height: 46px;
+    margin-right: -25px;
+}
+
+/* -------------------------------------- */
+
+.cabecarioData{
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.ciclo{
+    display: flex;
+    background-color: #000;
+    width: 26%;
+    margin-left:36%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.ciclo img{
+    width: 28px;
+    margin-left: 28px;
+}
+.ciclo h4{
+    padding: 0;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+.cabecarioData .inforData h2{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* ---------------------------------- */
+
+/* .buscar{
+    width:350px ;
+    height: 50px;
+    padding: 15px;
+    background-color: #fff;
+    margin: 0 0 0 0;
+} */
+.buscar input{
+    width: 700px;
+    height:  80px;
+    border-radius: 25px;
+    margin-top: 80px;
+    border: none;
+    font-size: 24px;
+    padding-left: 10px;
+}
+.buscar input:hover{
+    border: 1px solid #1F2A4D;
+}
+
+.buscar img{
+    width: 42px;
+    height:  42px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left:630px;
+
+}
+
+/* -------------------------------------------- */
+/* ------------------------------------------- */
+
+.promocaoImagem2{
+    margin-left: 35 5px;
+}
+
+.promocaoImagem2 .imagem1{
+    width: 80%;
+    margin-top: 125px;
+    margin-left: 180px;
+    height: 330px;
+}
+.promocaoImagem2 .inforPromocao{
+    display: flex;
+    margin-top: -300px;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+.inforPromocao div{
+    margin: 1%;
+}
+
+.inforPromocao h3{
+    color:  #e14912;
+    margin-bottom: 25px;
+
+}
+.inforPromocao h1{
+    color:#fff;
+    font-size: 50px;
+    width: 340px;
+}
+.inforPromocaoData{
+    display: flex;
+    padding: 35px 0;
+    
+}
+.inforPromocaoData h4{
+    font-size: 25px;
+    margin: 0 25px;
+    color: #fff;
+
+}
+.inforPromocao .imagem4{
+    margin-right: 190px;
+    width:  26%;
+    margin-top: -55px;
+    
+
+}
+.inforPromocao .imagem5{
+    position: absolute;
+    margin-left: 58%;
+    margin-top: 32px;
+    width: 9%;
+}
+/* ------------------------------------------- */
+
+.inicioProdutos{
+    margin: 150px 0 0 20px; 
+    font-size: 40px;
+
+}
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.produtoinfor{
+    width:350px;
+    height: 350px;
+    margin: 25px 20px;
+}
+.produtoinfor img{
+    width: 70%;
+    height: 50%;
+    border: 0.5px  solid gray;
+    border-radius: 9px;
+    padding: 0px 51px;
+}
+.detalheProduto{
+    margin: 0 20px;
+}
+
+.detalheProduto h3{
+    margin-top: 15px;
+    width: 300px;
+}
+.detalheProduto button{
+    background: #502B6B;
+    color: #fff;
+    margin-top: 25px;
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+}
