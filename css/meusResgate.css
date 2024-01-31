@@ -100,24 +100,10 @@ nav ul li a:hover {
     width:10% ;
     height: 10%;
     padding: 5px;
-    /* background-color: #502B6B; */
-    background-color: #c2a9d4;
+    background-color: #502B6B;
     border-radius: 12px;
-}
 
-/* .perfil1 img:hover{
-    background-color: #502B6B;
-} */
-
-/* -----------------assim que passa o mouse muda de cor tudo o menu------------------ */
-.perfil1:hover img {
-    background-color: #502B6B;
 }
-.perfil1:hover a {
-    color: blue;
-}
-
-/* ------------------------------------------------------------- */
 .perfil2{
     display: flex;
 }
@@ -142,49 +128,43 @@ nav ul li a:hover {
 
 .quadradoPerfil{
     width: 38%;
-    height: 80vh;
+    height: 100%;
     margin: auto;
+    border: none;
     box-shadow: 0px 7px 30px 0px #BBC0CD66;
     border-radius: 15px;
     padding: 20px;
 }
-.mostrarPerfil h1{
-    font-family: 'Sora', sans-serif;
-    font-size: 40px;
-    margin: 15px;
-    padding: 25px 0;
+/* --------------------------- */
+
+.data{
+    color: #c2a9d4;
 }
-.d-foto2 {
+.produtos{
     display: flex;
-    align-items: center;
-    margin-left: 50px;
+    flex-wrap: wrap;
 }
-.foto2 {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    box-shadow: 0px 7px 30px 0px #BBC0CD66;
-    margin-left: 20px; 
-}
-.mostrarPerfil form{
-    display: flex;
-    flex-direction: column;
-    margin: 15px 0 0 10px;
-    padding: 15px;
-    width: 80%;
-    height: 250px;
-    padding: 60px 20;
-}
-form label{
-    margin-top: 25px;
-    color: #7290cd;
-}
-.mostrarPerfil form input{
-    height: 70px;
-    border: none;
-    border-radius: 12px;
-    padding: 0 20px;
-    border: 1px solid #EEEEEE;
-    outline: none; /*tirar essa borda de "seleção"*/
+.titulo{
+    margin: 0px 0;
+    width: 100%;
 }
 
+.produtoinfor{
+    width:40%;
+    height: 280px;
+    margin: 10px 20px;
+}
+.produtoinfor img{
+    width: 58%;
+    height: 50%;
+    border: none;
+    box-shadow: 1px 0px 1px 1px rgb(193, 193, 193);
+    border-radius: 9px;
+    padding: 0px 51px;
+}
+.detalheProduto h3{
+    margin-top: 15px;
+    width: 250px;
+}
+
+/* --------------------------- */
