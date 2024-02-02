@@ -6,11 +6,12 @@ body{
     background-image: url('../imagens/tela\ de\ fundo.png');
     background-size: cover;
 }
+
 .aberturaLogo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
+    margin: 175px auto;
 }
 img{
     width: 530.3px;
@@ -23,23 +24,24 @@ img{
     margin: 50px;
     border-radius:16px;
     border: none;
-    color: #fff;
     font-size: 20px;
-    /* display: flex; */
 }
 .botaoAbertura:hover{
     background-color: #d1bede;
 }
+.botaoAbertura a{
+    text-decoration: none;
+}
 
 /* ------------Abertura Fim----------------------- */
 /* ------------login inicio----------------------- */
+
 .loginPrincipal{
     display: flex;
-/* aqui */
 }
 .aberturaLogo2{
-    margin: 300px 0 0 280px;
-/* aqui */
+    margin: 300px auto 0 280px;
+    /* aqui */
 }
 .entradaDeLogin{
     background-color: #fff;
@@ -48,7 +50,6 @@ img{
     margin: 0 0 0 20em;
     border-radius: 32px 0 0 32px;
 }
-/* colocar um display none aqui*/
 .conteudoDeLogin{
     margin:160px 0 0 60px;
     align-items: center;
@@ -86,11 +87,12 @@ input{
     height: 62px;
     border-radius: 12px;
     border: none;
-    box-shadow:0px 0px 0px 0px ;
+    box-shadow:0px 0px 0px 0px;
+    outline: none;
+    background-color: rgba(173, 199, 247, 0.4);
 }
 input:hover{
-    border:1px solid green;
-
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
 }
 .botaoLogin{
     background: #37137688;
@@ -104,6 +106,10 @@ input:hover{
 }
 .botaoLogin:hover{
     background-color: #d1bede;
+}
+
+.escondido {
+    display: none;
 }
 
 /* ------------login FIm----------------------- */
