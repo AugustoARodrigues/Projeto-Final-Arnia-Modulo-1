@@ -12,7 +12,6 @@ body {
 
 .header {
     background-image: url('../imagens/tela\ de\ fundo.png');
-    /* background-color: #1F2A4D; */
     height: 44.5em;
     background-size: cover;    
 }
