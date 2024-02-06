@@ -1,9 +1,8 @@
 // ------------------index para login-------------------------------
 
-
 const divVisualizar = () => {
-    const aberturaLogo = document.querySelector("#aberturaLogo");
-    const loginPrincipal = document.getElementById('loginPrincipal');
+    const aberturaLogo = document.querySelector("#aberturaLogo")
+    const loginPrincipal = document.getElementById('loginPrincipal')
 
     if (aberturaLogo.classList.contains("escondido")) {
         aberturaLogo.classList.remove("escondido")
@@ -34,7 +33,6 @@ const senhaInput = document.querySelector('#loginSenha').value
 if (emailInput === '' || senhaInput === '') {
     window.alert('Preencha todos os campos!')
 } else {
-    window.alert('Complete seu cadastro no "Meu Perfil') 
     window.location = 'html/home.html'
 }
 }

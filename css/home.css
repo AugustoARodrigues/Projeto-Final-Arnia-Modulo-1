@@ -12,6 +12,7 @@ body {
 
 .header {
     background-image: url('../imagens/tela\ de\ fundo.png');
+    /* background-color: #1F2A4D; */
     height: 44.5em;
     background-size: cover;    
 }
@@ -160,7 +161,10 @@ color: #fff;
 
 /* -------------------------------------------- */
 /* ------------------------------------------- */
-
+.banner{
+    margin-top: 125px;
+    margin-left: 280px;
+}
 .promocaoImagem2{
     margin-left: 35 5px;
 }
@@ -220,16 +224,17 @@ color: #fff;
 .inicioProdutos{
     margin: 150px 0 0 20px; 
     font-size: 40px;
-
 }
 .produtos{
     display: flex;
     flex-wrap: wrap;
+
 }
 .produtoinfor{
     width:350px;
     height: 350px;
     margin: 25px 20px;
+
 }
 .produtoinfor img{
     width: 70%;
