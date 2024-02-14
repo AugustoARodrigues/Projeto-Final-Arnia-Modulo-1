@@ -100,24 +100,22 @@ nav ul li a:hover {
     width:10% ;
     height: 10%;
     padding: 5px;
-    /* background-color: #502B6B; */
     background-color: #c2a9d4;
     border-radius: 12px;
 }
 
-/* .perfil1 img:hover{
-    background-color: #502B6B;
-} */
-
 /* -----------------assim que passa o mouse muda de cor tudo o menu------------------ */
 .perfil1:hover img {
-    background-color: #502B6B;
+    background-color: #956ab4;
 }
-.perfil1:hover a {
+.perfil2:hover img {
+    background-color: #956ab4;
+}
+/* .perfil1:hover a {
     color: blue;
-}
+} */
 
-/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
 .perfil2{
     display: flex;
 }
@@ -141,8 +139,9 @@ nav ul li a:hover {
 /* --------------------------- */
 
 .quadradoPerfil{
-    width: 38%;
-    height: 80vh;
+    width: 38%;     /*px*/
+    height: 95vh;
+    /* max-height: ;     */
     margin: auto;
     box-shadow: 0px 7px 30px 0px #BBC0CD66;
     border-radius: 15px;
@@ -154,11 +153,11 @@ nav ul li a:hover {
     margin: 15px;
     padding: 25px 0;
 }
-.d-foto2 {
+/* .d-foto2 {
     display: flex;
     align-items: center;
     margin-left: 50px;
-}
+} */
 .foto2 {
     width: 180px;
     height: 180px;
@@ -172,8 +171,9 @@ nav ul li a:hover {
     margin: 15px 0 0 10px;
     padding: 15px;
     width: 80%;
-    height: 250px;
-    padding: 60px 20;
+    height: 350px;
+    /* min-height: ; */
+    padding: 60px 20px;
 }
 form label{
     margin-top: 25px;
@@ -188,3 +188,13 @@ form label{
     outline: none; /*tirar essa borda de "seleção"*/
 }
 
+form .botaoSalva{
+    background: #502B6B;
+    color: #fff;
+    margin-top: 25px;
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    margin-left: 100px;
+}

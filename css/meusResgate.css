@@ -100,10 +100,20 @@ nav ul li a:hover {
     width:10% ;
     height: 10%;
     padding: 5px;
-    background-color: #502B6B;
+    background-color: #c2a9d4;
     border-radius: 12px;
-
 }
+/* -----------------assim que passa o mouse muda de cor tudo o menu------------------ */
+.perfil1:hover img {
+    background-color: #956ab4;
+}
+.perfil2:hover img {
+    background-color: #956ab4;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+
 .perfil2{
     display: flex;
 }
@@ -127,7 +137,7 @@ nav ul li a:hover {
 /* --------------------------- */
 
 .quadradoPerfil{
-    width: 38%;
+    width:40%;
     height: 100%;
     margin: auto;
     border: none;
@@ -145,7 +155,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 .titulo{
-    margin: 0px 0;
+    margin: 0px 35%;
     width: 100%;
 }
 

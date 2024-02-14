@@ -21,9 +21,9 @@
           </div>
           <nav>
             <ul class="ul">
-              <li><a href="">Home</a></li>
-              <li><a href="">Produtos</a></li>
-              <li><a href="">Meu perfil</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#produtos">Produtos</a></li>
+              <li><a href="meudados.html">Meu perfil</a></li>
             </ul>
           </nav>
         </div>
@@ -33,10 +33,13 @@
             <h1 class="saldo">Meu saldo</h1>
             <h1 class="numeroDeSaldo">100</h1>
             <h3>jóias</h3>
-            <img src="../imagens//joia 1.png" alt="" />
+            <img class="joiasCompleta" src="../imagens/joias.png" alt="" srcset="">
+
+            <!-- <img src="../imagens//joia 1.png" alt="" />
             <img src="../imagens//joia 2.png" alt="" />
             <img src="../imagens//joia 3.png" alt="" />
-            <img src="../imagens//joia 4.png" alt="" />
+            <img src="../imagens//joia 4.png" alt="" /> -->
+
           </div>
           <div class="cabecarioData">
             <div class="inforData">
@@ -49,21 +52,23 @@
               <h2>Vence em: 06 de julho de 2023</h2>
             </div>
             <div class="buscar" id="buscar">
-              <img src="../imagens/lupa.png" alt="" />
+              <button class="bucarNaLupa"><img src="../imagens/lupa.png" alt="" /></button>
               <input
                 type="text"
                 id="pesquisa"
                 placeholder="O que você está buscando?"
+                onclick=""
+                oninput="buscarProduto()"
               />
             </div>
           </div>
         </div>
       </div>
-      <!-- /* ------------------banner feito do zero------------------------- */ -->
+      <!-- /* ------------------banner------------------------- */ -->
       <div class="banner ">
         <img src="../imagens/Frame 70.png" alt="" srcset="">
       </div>
-      <!-- /* ------------------banner feito do zero------------------------- */ -->
+      <!-- /* ------------------banner------------------------- */ -->
       <h1 class="inicioProdutos">Produtos para você</h1>
       <div class="produtos" id="produtos">
       </div>

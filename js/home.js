@@ -1,18 +1,21 @@
 // -------------aparecer o alerta apos carregar a pagina------------------------
-const visAlertaHome=()=>{
-    window.alert('Complete seu cadastro no "Meu Perfil') 
-}
-window.addEventListener('load', visAlertaHome)
+// const visAlertaHome=()=>{
+//     window.alert('Complete seu cadastro no "Meu Perfil') 
+// }
+// window.addEventListener('load', visAlertaHome)
 
 // --------------------------------------------------------------------------
 
 
+const irProduto = (id) => {
+    window.location.href = `../html/produto.html?id=${id}`
+}
+
 
 const aquiPost= async ()=>{
-    const buscarApiHttp = await fetch('https://projeto-arnia-final.onrender.com/produtos')
+    const buscarApiHttp = await fetch('http://localhost:3000/produtos')
     const produdos = await buscarApiHttp.json()
-    // console.log(buscarApiHttp)
-    // console(produdos)
+
     return  produdos
 }
 
@@ -30,19 +33,51 @@ const mostrarProdutos=(produdos) =>{
 
             <p class="quantidadeJoias">2 joias</p>
 
-            <a href="../html/produto.html?id=${produto.id}">
-            <button class="botaoPResgate">Resgatar</button></a>
+            <button class="botaoPResgate" onclick="irProduto('${produto.id}')">Resgatar</button>
 
         </div>  
 
         `        
     })
-    // <button class="botaoPResgate" onclick="irProduto('${produto.id}')">Resgatar</button>
-
 }
+
 const carregarDadosProduto = async ()=>{
     const postagens = await aquiPost()
     mostrarProdutos(postagens) 
 }
 carregarDadosProduto()
+
+
+// ---------------------busca--------------------------
+
+// const buscarProduto=()=>{
+//         const termoBusca = document.getElementById('pesquisa').value.toLowerCase()
+//         const produtos = aquiPost()
+
+//         produtos.then((data)=>{
+//             const produtosFiltrados =data.filter((produto)=>{
+//                 return produto.title
+//             })
+//             mostrarProdutos(produtosFiltrados)
+//         })
+// }
+
+
+const buscarProduto = () => {
+    const termoBusca = document.getElementById('pesquisa').value.toLowerCase();
+    const produtos = aquiPost();
+
+    produtos.then((data) => {
+        const produtoEncontrado = data.find((produto) => {
+            return produto.title.toLowerCase() === termoBusca;
+        });
+
+        if (produtoEncontrado) {
+            irProduto(produtoEncontrado.id);
+        } else {
+            // Display a message or handle the case where the product is not found
+            console.log("Produto não encontrado");
+        }
+    });
+};
 

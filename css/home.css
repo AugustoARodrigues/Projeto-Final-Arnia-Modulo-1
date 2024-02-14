@@ -91,11 +91,16 @@ color: #fff;
     margin-bottom: 30px;
 }
 
-.cabecarioSaldo img{
+.joiasCompleta{
+    width: 230px;
+    height: 46px;
+}
+
+/* .cabecarioSaldo img{
     width: 70px;
     height: 46px;
     margin-right: -25px;
-}
+} */
 
 /* -------------------------------------- */
 
@@ -107,7 +112,7 @@ color: #fff;
 
 .ciclo{
     display: flex;
-    background-color: #000;
+    background: #502B6B;
     width: 26%;
     margin-left:36%;
     padding: 10px;
@@ -130,13 +135,7 @@ color: #fff;
 
 /* ---------------------------------- */
 
-/* .buscar{
-    width:350px ;
-    height: 50px;
-    padding: 15px;
-    background-color: #fff;
-    margin: 0 0 0 0;
-} */
+
 .buscar input{
     width: 700px;
     height:  80px;
@@ -150,12 +149,12 @@ color: #fff;
     border: 1px solid #1F2A4D;
 }
 
-.buscar img{
+.buscar button img{
     width: 42px;
     height:  42px;
     position: absolute;
-    margin-top: 100px;
-    margin-left:630px;
+    margin-top: -27px;
+    margin-left:650px;
 
 }
 
