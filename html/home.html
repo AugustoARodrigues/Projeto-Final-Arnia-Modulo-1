@@ -8,16 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="icon" href="../imagens/tela de fundo.png">
-    <script src="../js/home.js"></script>
+    <script src="../js/home.js" defer></script>
     <title>Home</title>
   </head>
   <body>
-    <div class="paginaPrincipalHome">
-      <div class="header" id="header">
+    <div>
+      <div class="header">
         <div class="headerInfor">
           <div class="d-foto">
-            <img class="foto" src="../imagens/robot-para home.jpg" alt="" />
-            <h3>Olá, Nome</h3>
+            <img class="foto" id="fotoUsuario" src="../imagens/robot-para home.jpg" alt="" />
+            <h3>Olá, <span class="nomeUsuario"></span></h3>
           </div>
           <nav>
             <ul class="ul">
@@ -34,32 +34,24 @@
             <h1 class="numeroDeSaldo">100</h1>
             <h3>jóias</h3>
             <img class="joiasCompleta" src="../imagens/joias.png" alt="" srcset="">
-
-            <!-- <img src="../imagens//joia 1.png" alt="" />
-            <img src="../imagens//joia 2.png" alt="" />
-            <img src="../imagens//joia 3.png" alt="" />
-            <img src="../imagens//joia 4.png" alt="" /> -->
-
           </div>
           <div class="cabecarioData">
-            <div class="inforData">
+            <div>
               <div class="ciclo">
-                <img src="../imagens/calendar-line.png" alt="" />
-                <div class="dataVencimento" id="dataVencimento">
+                  <img src="../imagens/calendar-line.png" alt="" />
                   <h4>2° Ciclo de Gestão de Desempenho</h4>
-                </div>
               </div>
               <h2>Vence em: 06 de julho de 2023</h2>
             </div>
             <div class="buscar" id="buscar">
               <button class="bucarNaLupa"><img src="../imagens/lupa.png" alt="" /></button>
               <input
-                type="text"
-                id="pesquisa"
-                placeholder="O que você está buscando?"
-                onclick=""
-                oninput="buscarProduto()"
-              />
+                    type="text"
+                    id="pesquisa"
+                    placeholder="O que você está buscando?"
+                    onclick=""
+                    oninput="buscarProduto()"
+                  />
             </div>
           </div>
         </div>

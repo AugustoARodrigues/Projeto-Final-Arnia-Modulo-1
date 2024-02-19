@@ -8,19 +8,18 @@
 body {
     font-family: "Karla", sans-serif;
     font-family: "Roboto", sans-serif;
-    }
+}
 
 .header {
-
     height: 15em;
     background-size: cover;    
 }
 .headerInfor{
     display: flex;
     justify-content: space-between;
-    align-items: center;    
-    padding: 50px;
-    margin: 0 150px;
+    align-items: center;
+    padding: 30px;
+    margin: 0 120px;
 }
 .d-foto {
     display: flex;
@@ -29,15 +28,17 @@ body {
 }
 
 .foto {
-    width: 70px;
-    height: 70px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    box-shadow: 0px 7px 30px 0px #BBC0CD66;
-    margin-right: 20px; 
+    margin-right: 16px; 
 }
 .headerInfor h3{
-    color: #502B6B;
+    width: 600px;
+    font-family: "Sora", sans-serif;
+    line-height: 36px;
     font-size: 20px;
+    color: #502B6B;
 }
 
 nav ul {
@@ -56,7 +57,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: #502B6B;
+    color:#000;
     text-decoration: none;
     padding: 15px 20px;
     font-size: 20px;
@@ -74,7 +75,7 @@ nav ul li a:hover {
 
 .menuLateral{
     width:25% ;
-    height: 100%;
+    height: 98%;
     margin-left: 160px;
 }
 
@@ -83,11 +84,12 @@ nav ul li a:hover {
     flex-direction: column;
 }
 .perfil div{
-    margin-bottom: 35px;
-    padding: 15px;
+    width: 380px;
+    padding: 24px 0;
+    border-bottom: 1px  solid #c2a9d4;
 }
 .perfil div:hover{
-    border: 4px solid #502B6B;
+    border: 3px solid #502B6B;
 }
 .perfil1{
     display: flex;
@@ -95,14 +97,17 @@ nav ul li a:hover {
 .perfil a{
     font-size: 24px;
     margin-left: 50px;
+    text-decoration: none;
+    color: #616161;
 }
 .perfil1 img{
-    width:10% ;
-    height: 10%;
-    padding: 5px;
+    width:40px ;
+    height: 40px;
+    padding: 15px;
     background-color: #c2a9d4;
     border-radius: 12px;
 }
+
 /* -----------------assim que passa o mouse muda de cor tudo o menu------------------ */
 .perfil1:hover img {
     background-color: #956ab4;
@@ -112,69 +117,84 @@ nav ul li a:hover {
 }
 
 /* ------------------------------------------------------------------------------- */
-
-
 .perfil2{
     display: flex;
 }
 .perfil2 img{
-    width:10%;
-    height: 10%;
-    padding: 5px;
+    width:40px;
+    height: 40px;
+    padding: 15px;
     background-color: #c2a9d4;
     border-radius: 12px;
 }
 .perfil1 a{
-    margin: 10px 15px;
+    margin: 20px 0px 0px 20px;
     font-size: 24px;
-    margin-left: 30px;
 }
 .perfil2 a{
-    margin: 10px 15px;
+    margin: 20px 0px 0px 20px;
     font-size: 24px;
-    margin-left: 30px;
 }
 /* --------------------------- */
 
 .quadradoPerfil{
-    width:40%;
-    height: 100%;
-    margin: auto;
-    border: none;
+    width: 670px; 
+    height: auto;
+    margin: 0px 0 0 235px;
     box-shadow: 0px 7px 30px 0px #BBC0CD66;
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 48px;
+    padding: 56px ;
 }
 /* --------------------------- */
-
-.data{
-    color: #c2a9d4;
+.titulo{
+    width: 183px;
+    height: 34px;
+    margin: 22px 0px 22px 24px;
+    font-size: 24px;
 }
 .produtos{
     display: flex;
     flex-wrap: wrap;
 }
-.titulo{
-    margin: 0px 35%;
-    width: 100%;
-}
 
 .produtoinfor{
-    width:40%;
-    height: 280px;
-    margin: 10px 20px;
+    width:270px;
+    height: 350px;
+    margin: 0px 26px 22px 24px;
 }
+.data{
+    width: 133px;
+    height: 24px;
+    font-size: 16px;
+    font-family: "Sora", sans-serif;
+    color: #c2a9d4;
+    margin: 12px;
+}
+
 .produtoinfor img{
-    width: 58%;
-    height: 50%;
+    width: 165px;
+    height: 160px;
     border: none;
     box-shadow: 1px 0px 1px 1px rgb(193, 193, 193);
-    border-radius: 9px;
+    border-radius: 16px;
     padding: 0px 51px;
 }
+.detalheProduto{
+    width: 240px;
+    height: 74px;
+    margin: 40px 16px;
+}
 .detalheProduto h3{
-    margin-top: 15px;
-    width: 250px;
+    font-size: 16px;
+    width: 230px;
+    height: 36px;
+    color: #212121;
+}
+.quantidadeJoias{
+    width: 41px;
+    height: 17px;
+    font-size: 12px;
+    color: #9E9E9E;
 }
 
 /* --------------------------- */

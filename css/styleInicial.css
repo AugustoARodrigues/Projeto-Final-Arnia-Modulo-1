@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,8 +14,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 175px auto;
+    margin: 259px  259px 0px  259px;
 }
+
 img{
     width: 530.3px;
     height: 181px;
@@ -21,11 +25,14 @@ img{
     background: #bf90e0;
     width:382px ;
     height: 72px;
-    margin: 50px;
+    margin: 50px 74px 74px 50px;
     border-radius:16px;
     border: none;
     font-size: 20px;
+    font-family: "Sora", sans-serif;
+    padding: 12px, 64px, 12px, 64px;
 }
+
 .botaoAbertura:hover{
     background-color: #d1bede;
 }
@@ -39,32 +46,41 @@ img{
 .loginPrincipal{
     display: flex;
 }
-.aberturaLogo2{
-    margin: 300px auto 0 280px;
-    /* aqui */
+
+.logo{
+    width: 600px;
+    height: 150px;
+    margin: 340px 0 0  141px;
 }
 .entradaDeLogin{
     background-color: #fff;
-    width: 100%;
-    height: 100vh;
-    margin: 0 0 0 20em;
+    width: 700px;
+    height: 750px;
+    margin: 0 0 0 400px;
     border-radius: 32px 0 0 32px;
 }
 .conteudoDeLogin{
     margin:160px 0 0 60px;
-    align-items: center;
+    /* align-items: center; */
 }
 .sejaBemVindo{
     padding: 30px;
-    margin: 100px 0 0 0px;
-    text-align: center;
+    margin-left: 60px;
+    /* text-align: center; */
 }
 .sejaBemVindo h3{
-    color:#576aa3;
-    font-size: 25px;
+    color: #3E4C76;
+    font-family: "Sora", sans-serif;
+    font-size: 18px;
+    width: 160px;
+    height: 27px;
 }
 .sejaBemVindo h1{
-    font-size: 42px;
+    font-size: 32px;
+    font-family: "Sora", sans-serif;
+    width: 250px;
+    height: 45px;
+    line-height: 44px;
     color: #502B6B;
 }
 .loginEntrada{
@@ -78,27 +94,28 @@ img{
 }
 
 label {
-    margin-bottom: 5px;
     display: flex;
-    margin-left: 90px;
+    margin-left: 100px;
+    color: #9e9e9e;
 }
 input{
     width: 350px;
-    height: 62px;
-    border-radius: 12px;
+    height: 72px;
+    border-radius: 16px;
     border: none;
     box-shadow:0px 0px 0px 0px;
     outline: none;
     background-color: rgba(173, 199, 247, 0.4);
+    padding: 0 10px;
 }
 input:hover{
     box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
 }
 .botaoLogin{
-    background: #37137688;
-    width:300px;
-    height: 52px;
-    margin: 30px;
+    background: #502b6b;
+    width:370px;
+    height: 72px;
+    margin: 15px;
     border-radius:16px;
     border: none;
     font-size: 18px;
@@ -107,7 +124,6 @@ input:hover{
 .botaoLogin:hover{
     background-color: #d1bede;
 }
-
 .escondido {
     display: none;
 }

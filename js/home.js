@@ -1,11 +1,3 @@
-// -------------aparecer o alerta apos carregar a pagina------------------------
-// const visAlertaHome=()=>{
-//     window.alert('Complete seu cadastro no "Meu Perfil') 
-// }
-// window.addEventListener('load', visAlertaHome)
-
-// --------------------------------------------------------------------------
-
 
 const irProduto = (id) => {
     window.location.href = `../html/produto.html?id=${id}`
@@ -31,7 +23,7 @@ const mostrarProdutos=(produdos) =>{
             <div class="detalheProduto">
             <h3>${produto.title}</h3>
 
-            <p class="quantidadeJoias">2 joias</p>
+            <p class="quantidadeJoias">${produto.joias} joias</p>
 
             <button class="botaoPResgate" onclick="irProduto('${produto.id}')">Resgatar</button>
 
@@ -48,36 +40,25 @@ const carregarDadosProduto = async ()=>{
 carregarDadosProduto()
 
 
-// ---------------------busca--------------------------
+// --------------------------------------------------------------------
 
-// const buscarProduto=()=>{
-//         const termoBusca = document.getElementById('pesquisa').value.toLowerCase()
-//         const produtos = aquiPost()
+const gerarProduto = async()=>{
+    let dados = await fetch(`http://localhost:3000/identidade`)
+    const ident = await dados.json() 
+    return ident
+}
 
-//         produtos.then((data)=>{
-//             const produtosFiltrados =data.filter((produto)=>{
-//                 return produto.title
-//             })
-//             mostrarProdutos(produtosFiltrados)
-//         })
-// }
+const carregarDadosidentidade = (ident)=>{
+    document.querySelector('.nomeUsuario').innerText = ident.nomeUsuario
+    const nomeUsuario = ident[0].nomeUsuario
+    const fotoUsuario = ident[0].fotoUsuario
+    document.querySelector('.nomeUsuario').innerText = nomeUsuario
+    document.getElementById('fotoUsuario').src = fotoUsuario
+    carregarDadosProduto(ident)
+}
 
-
-const buscarProduto = () => {
-    const termoBusca = document.getElementById('pesquisa').value.toLowerCase();
-    const produtos = aquiPost();
-
-    produtos.then((data) => {
-        const produtoEncontrado = data.find((produto) => {
-            return produto.title.toLowerCase() === termoBusca;
-        });
-
-        if (produtoEncontrado) {
-            irProduto(produtoEncontrado.id);
-        } else {
-            // Display a message or handle the case where the product is not found
-            console.log("Produto não encontrado");
-        }
-    });
-};
-
+const carregarIdent = async () => {
+    const ident = await gerarProduto()
+    carregarDadosidentidade(ident);
+}
+carregarIdent();

@@ -8,18 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/meusDados.css" />
     <link rel="icon" href="../imagens/tela de fundo.png">
-    <script src="../js/meusDados.js"></script>
+    <script src="../js/meusDados.js" defer></script>
     <title>Meus Dados</title>
 </head>
-
 <body>
     <div class="paginaPrincipalHome">
             <div class="header" id="header">
             <div class="headerInfor">
                 <div class="d-foto">
-                    <img class="foto" src="../imagens/robot-para home.jpg" alt="" />
-                    <h3>Olá, Nome</h3>
-                    </div>
+                    <img class="foto" id="fotoUsuario" src="../imagens/robot-para home.jpg" alt="" />
+                    <h3>Olá, <span class="nomeUsuario"></span></h3>
+                </div>
                 <nav>
                     <ul class="ul">
                         <li><a href="home.html">Home</a></li>
@@ -53,22 +52,21 @@
             </div>
     <!-- --------------------------------------------------------------------------- -->
             <div class="quadradoPerfil">
-                <div class="mostrarPerfil">
-                    <h1>Meus Dados</h1>
-                    <div class="fotoPerfil"> 
-                        <img class="foto2"  src="../imagens/robot-para home.jpg" alt="" />
-                    </div>
-                    <form class="formulario" id="formulario" >
-                        <label for="nomeUsuario">Nome:</label>
-                        <input type="text" name="nomeUsuario" id="nomeUsuario"  placeholder="Digita seu Nome">
-                        <label for="emailUsuario">E-mail:</label>
-                        <input type="email" name="emailUsuario" id="emailUsuario" placeholder="Digita seu E-mail">
-                        <label for="fotoUsuiario">Adiciona uma Foto:</label>
-                        <input type="text" name="fotoUsuiario" id="fotoUsuiario" placeholder="">
+                <h1>Meus Dados</h1>
+                <img class="foto2" id="fotoUsuario" src="../imagens/robot-para home.jpg" alt="" />
+
+                <form class="formulario" id="formularioCadastro" >
+                    <label for="nomeUsuario">Nome:</label>
+                    <input type="text" name="nomeUsuario" id="nomeUsuario"  placeholder="Digita seu Nome">
+                    <label for="emailUsuario">E-mail:</label>
+                    <input type="email" name="emailUsuario" id="emailUsuario" placeholder="Digita seu E-mail">
+                    <label for="fotoUsuiario">Adiciona uma Foto:</label>
+                    <input type="text" name="fotoUsuiario" id="fotoUsuiario" placeholder="">
+                    <div>
                         <button type="submit" class="botaoSalva">Salvar</button>
-                    </form>
-                </div>
-            </div>
+                    </div>
+                </form>
+            </div>            
         </div>
     </div>
     </div>

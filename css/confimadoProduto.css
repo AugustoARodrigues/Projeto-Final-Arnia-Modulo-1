@@ -8,19 +8,18 @@
 body {
     font-family: "Karla", sans-serif;
     font-family: "Roboto", sans-serif;
-    }
+}
 
 .header {
-
-    height: 15em;
+    height: 12em;
     background-size: cover;    
 }
 .headerInfor{
     display: flex;
     justify-content: space-between;
-    align-items: center;    
-    padding: 50px;
-    margin: 0 150px;
+    align-items: center;
+    padding: 30px;
+    margin: 0 120px;
 }
 .d-foto {
     display: flex;
@@ -29,15 +28,17 @@ body {
 }
 
 .foto {
-    width: 70px;
-    height: 70px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    box-shadow: 0px 7px 30px 0px #BBC0CD66;
-    margin-right: 20px; 
+    margin-right: 16px; 
 }
 .headerInfor h3{
-    color: #502B6B;
+    width: 600px;
+    font-family: "Sora", sans-serif;
+    line-height: 36px;
     font-size: 20px;
+    color: #502B6B;
 }
 
 nav ul {
@@ -56,7 +57,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: #000;
+    color:#000;
     text-decoration: none;
     padding: 15px 20px;
     font-size: 20px;
@@ -66,21 +67,31 @@ nav ul li a:hover {
     color: #7290cd;
 }
 
-/* ----------------------------------------------------------- */
+/* --------------------------------- */
 
 .inforProdutos{
     display: flex;
     justify-content: center;
 }
 .grud{
-    margin: 0px 100px;
+    width: 470px;
+    height: 533px;
+    margin: 0px 135px;
+}
+
+.descricaoProduto{
+    margin: 60px 0px;
+    width: 548px;
+    height: 433px;
 }
 
 .descricaoProduto h2{
+    width: 548px;
+    height: 38px;
+    font-family: "Sora", sans-serif;
+    margin-bottom: 32px;
     font-weight: bold;
-    margin-bottom: 25px;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
 }
 .imagemProduto{
     display: flex;
@@ -88,61 +99,65 @@ nav ul li a:hover {
 .imagemProduto .fone{
     width:100px ;
     height:100px ;
+    margin: 0 16px 22px 0px;
 }
 .descFinal{
-    margin-left: 10px;
     text-align: left;
+    
 }
-.imagemProduto p{
-    font-weight: bold;
-    width: 200px;
-    color: #616161;
+.imagemProduto .descFinal p{
+    font-family: "Sora", sans-serif;
+    width: 228px;
+    height: 48px;
+    font-size: 16px;  
+    text-decoration: none;  
 }
-.imagemProduto .qntDiamantes{
-    padding: 15px 0; 
+.imagemProduto .descFinal .qntDiamantes{
+    width: 106px;
+    height: 30px;
+    margin: 8px 0;
     color: #502B6B;
     font-size: 25px;
 }
 
-.descricaoProduto{
-    flex-direction: column;
-    margin: 30px 0px;
-    width: 35%;
-    height:  420px;
-}
 .descricaoProduto .qntDiamantes img{
-    margin-left: 5px; 
+    margin:4px 0px 0px 5px; 
+    width: 22px;
 }
 .descricaoProduto .descricaoProdutoexato{
-    margin-left: 5px; 
-    padding: 5px 0;
-    color: #616161;
+    color: #757575;
     font-weight: 400px;
     word-spacing: 5px;
     font-size: 18px;
-    width:  450px;
+    width: 348px;
+    height: 54px;
     border: none;
     font-family: 'Sora', sans-serif;
 }
 .meuSaldo{
-    width:150px ;
-    height: 30px;
-    background-color: #f4f4f4;
-    padding: 10px;
+    width:170px;
+    height: 35px;
+    padding: 15px 15px 7px 13px;
     border-radius: 8px;
-    margin-top: 30px;
+    margin-top: 16px;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 1px  1px gray;
+    border: 1px solid #E0E0E0
+    
 }
-
+.meuSaldo .saldoDiamante{
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
 .voltarProduto {
     color:#361d49;
-    border: 4px solid  #502B6B;
+    font-family: 'Sora', sans-serif;
+    border: 3px solid  #502B6B;
     margin-top: 45px;
-    width: 300px;
-    height: 80px;
-    border-radius: 12px;
+    width: 270px;
+    height: 72px;
+    border-radius: 16px;
     font-size: 20px;
     background-color: #ffffff;
 }

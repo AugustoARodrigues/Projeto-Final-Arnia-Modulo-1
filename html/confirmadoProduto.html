@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/confimadoProduto.css" />
-    <script src="../js/confirmaProduto.js"></script>
+    <script src="../js/confirmaProduto.js" defer></script>
     <title>confimado Produto</title>
 </head>
 
@@ -27,25 +29,28 @@
                 </nav>
             </div>
         </div>
+
+
         <div class="inforProdutos" id="inforProdutos">
-            <div class="grud">
-                <img  src="../imagens/grud.png" alt="" srcset="">
-            </div>
+            <img class="grud" src="../imagens/grud.png" alt="" srcset="">
             <div class="descricaoProduto">
                 <h2>Produto resgatado com sucesso!</h2>
                 <div class="imagemProduto">
-                    <div>
-                        <img class="fone"  id="imagemProduto" src="" alt="" srcset="">
-                    </div>
+                    <img class="fone"  id="imagemProduto" src="" alt="" srcset="">
                     <div class="descFinal">
                         <p id="titulo"></p>
-                        <p class="qntDiamantes">Por: 2 <img src="../imagens/diamond.png" alt="" srcset=""></p>
+                        <p class="qntDiamantes">Por:
+                            <span class="qntDiamantesCarg"></span>
+                            <img src="../imagens/diamond.png" alt="" srcset="">
+                        </p>
                     </div>
                 </div>
                 <p class="descricaoProdutoexato">
                     Aqui irá um texto explicando como o produto será retirado.               
                 </p>
-                <p class="meuSaldo">Meu saldo: 4 <img src="../imagens/diamond.png" alt="" srcset=""></p>
+                <p class="meuSaldo">Meu saldo: 4 
+                    <img class="saldoDiamante" src="../imagens/diamond.png" alt="" srcset="">
+                </p>
                 <button type="button" class="voltarProduto" onclick="voltarHome()" >Voltar à página inicial</button>
             </div>
         </div>

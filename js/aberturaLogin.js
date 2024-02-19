@@ -17,23 +17,32 @@ const botaoAbertura = document.getElementById('botaoAbertura')
 
 botaoAbertura.addEventListener('click', divVisualizar)
 
-// Adiciona um ouvinte de evento ao botão ser clicado e ser visualizado no momento
-
-
 // ------------------logim para home-------------------------------
 
+const botaoLogin = document.querySelector('#botaoLogin');
 
-const botaoLogin = document.querySelector('#botaoLogin')
+const saveEmailNoAPI = async (emailUsuario) => {
+    await fetch('http://localhost:3000/identidade', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ emailUsuario })
+    })
+};
 
-const alertaLoginhome =()=> {
+const alertaLoginhome = () => {
+    const emailInput = document.querySelector('#emailUsuario').value
+    const senhaInput = document.querySelector('#loginSenha').value
 
-const emailInput = document.querySelector('#loginEmail').value
-const senhaInput = document.querySelector('#loginSenha').value
-
-if (emailInput === '' || senhaInput === '') {
-    window.alert('Preencha todos os campos!')
-} else {
-    window.location = 'html/home.html'
+    if (emailInput === '' || senhaInput === '') {
+        window.alert('Preencha todos os campos!')
+    } else {
+        saveEmailNoAPI(emailInput)
+        window.location = 'html/home.html'
+    }
 }
-}
+
 botaoLogin.addEventListener('click', alertaLoginhome)
+

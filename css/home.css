@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -12,16 +11,16 @@ body {
 
 .header {
     background-image: url('../imagens/tela\ de\ fundo.png');
-    /* background-color: #1F2A4D; */
-    height: 44.5em;
+    height: 565px;
     background-size: cover;    
 }
+
 .headerInfor{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
-    margin: 0 150px;
+    padding: 30px;
+    margin: 0 120px;
 }
 .d-foto {
     display: flex;
@@ -30,14 +29,16 @@ body {
 }
 
 .foto {
-    width: 70px;
-    height: 70px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    box-shadow: 0px 7px 30px 0px #BBC0CD66;
-    margin-right: 20px; 
+    margin-right: 16px; 
 }
 .headerInfor h3{
     color: #fff;
+    width: 600px;
+    font-family: "Sora", sans-serif;
+    line-height: 36px;
     font-size: 20px;
 }
 
@@ -78,58 +79,61 @@ color: #fff;
 .cabecarioSaldo .saldo{
     padding: 5px;
     text-align: center;
+    width: 186px;
+    height:  38px;
+    margin: 0 0 0 747px; 
 }
 .numeroDeSaldo{
     font-family: 'Sixtyfour', sans-serif;
+    width: 350px;
+    height: 99px;
     font-size: 80px;
-    margin-top: 25px;
-    /* margin-left: 2%; */
+    line-height: 99px;
+    margin: 10px 0 0 660px;
+    color: #DCB6F8;
 }
 
 .cabecarioSaldo h3{
     font-size: 26px;
     margin-bottom: 30px;
+    color: #DCB6F8;
 }
 
 .joiasCompleta{
-    width: 230px;
-    height: 46px;
+    width: 142px;
+    height: 36px;
 }
-
-/* .cabecarioSaldo img{
-    width: 70px;
-    height: 46px;
-    margin-right: -25px;
-} */
 
 /* -------------------------------------- */
 
 .cabecarioData{
     text-align: center;
     color: #fff;
-    margin-top: 50px;
+    margin-top: 32px;
 }
 
 .ciclo{
     display: flex;
     background: #502B6B;
-    width: 26%;
-    margin-left:36%;
-    padding: 10px;
+    width: 420px;
+    height: 33px;
+    margin: 0px 0 0 635px;
+    padding: 1px;
     border-radius: 20px;
     font-size: 20px;
 }
 .ciclo img{
-    width: 28px;
-    margin-left: 28px;
+    width: 25px;
+    height:  25px;
+    margin: 4px 0 0 16px;
 }
 .ciclo h4{
     padding: 0;
     margin-left: 15px;
-    margin-top: 4px;
+    margin-top: 7px;
 }
-.cabecarioData .inforData h2{
-    margin-top: 30px;
+.cabecarioData h2{
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -137,32 +141,34 @@ color: #fff;
 
 
 .buscar input{
-    width: 700px;
-    height:  80px;
-    border-radius: 25px;
-    margin-top: 80px;
+    width: 660px;
+        height:  72px;
+    border-radius: 8px;
+    margin-top: 40px;
     border: none;
+    box-shadow: 0 2px 1px 1px #BBC0CD66;
     font-size: 24px;
-    padding-left: 10px;
+    padding-left: 90px;
+    outline: none;
+
 }
 .buscar input:hover{
     border: 1px solid #1F2A4D;
 }
 
 .buscar button img{
-    width: 42px;
-    height:  42px;
+    width: 35px;
+    height: 35px;
     position: absolute;
-    margin-top: -27px;
-    margin-left:650px;
-
+    margin-top: -25px;
+    margin-left: 25px;
 }
 
 /* -------------------------------------------- */
-/* ------------------------------------------- */
+
 .banner{
-    margin-top: 125px;
-    margin-left: 280px;
+    margin-top: 80px;
+    text-align: center;
 }
 .promocaoImagem2{
     margin-left: 35 5px;
@@ -221,23 +227,26 @@ color: #fff;
 /* ------------------------------------------- */
 
 .inicioProdutos{
-    margin: 150px 0 0 20px; 
-    font-size: 40px;
+    margin: 150px 0 0 200px; 
+    font-size: 32px;
+    font-family: "Sora", sans-serif;
+    width: 324px;
+    height: 45px;
 }
 .produtos{
     display: flex;
     flex-wrap: wrap;
-
+    margin-left: 175px;
+    margin-top: 30px;
 }
 .produtoinfor{
-    width:350px;
-    height: 350px;
-    margin: 25px 20px;
-
+    width:270px;
+    height: 317px;
+    margin: 25px 25px;
 }
 .produtoinfor img{
-    width: 70%;
-    height: 50%;
+    width: 65%;
+    height: 155px;
     border: 1px solid #EEEEEE;
     border-radius: 12px;
     padding: 0px 51px;
@@ -248,15 +257,19 @@ color: #fff;
 
 .detalheProduto h3{
     margin-top: 15px;
-    width: 300px;
+    width: 250px;
+}
+.quantidadeJoias{
+    color: #9E9E9E;
 }
 .detalheProduto button{
     background: #502B6B;
     color: #fff;
     margin-top: 25px;
-    width: 300px;
-    height: 50px;
-    border-radius: 12px;
+    margin-left: 10px;
+    width: 238px;
+    height: 40px;
+    border-radius: 8px;
     border: none;
 }
 

@@ -10,6 +10,8 @@ const carregarDadosProduto = (produto) => {
     document.querySelector('#titulo').innerText = produto.title
     document.querySelector('#descricao1').innerText = produto.descricao
     document.querySelector('#descricao2').innerText = produto.descricao2
+    document.querySelector('.qntDiamantesCarg').innerText = produto.joias
+
 }
 
 const resgatarProduto = async (id) => {
@@ -23,7 +25,8 @@ const resgatarProduto = async (id) => {
         body: JSON.stringify({ 
             productId: id, 
             title: produto.title,
-            imagem: produto.imagem
+            imagem: produto.imagem,
+            joias:  produto.joias
     })
     })
 
@@ -31,11 +34,10 @@ const resgatarProduto = async (id) => {
     console.log(result)
 
     window.location.href = `../html/confirmadoProduto.html?id=${id}`
-    // window.location.href = `../html/meusResgate.html?id=${id}`
 
 };
 
-const handleResgateClick = async (e, id) => {
+const resgateClick = async (e, id) => {
     e.preventDefault()
 
     const produto = await gerarProduto(id)
@@ -53,5 +55,5 @@ document.addEventListener('DOMContentLoaded', async () => {
     carregarDadosProduto(produto)
 
     const botaoResgate = document.querySelector('.resgatarProduto')
-    botaoResgate.addEventListener('click', (e) => handleResgateClick(e, id))
+    botaoResgate.addEventListener('click', (e) => resgateClick(e, id))
 })

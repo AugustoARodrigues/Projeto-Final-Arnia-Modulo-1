@@ -14,12 +14,9 @@ const sair = () => {
 }
 
 
-// ------------------------------------------------------------
+// ---------------------ADD---------------------------------------
 
-
-
-
-let formulario = document.getElementById('formulario')
+let formulario = document.getElementById('formularioCadastro')
 
 const cadastrarUsuario = async (objetoUsuario) => { 
   await fetch('http://localhost:3000/identidade', {
@@ -32,73 +29,51 @@ const cadastrarUsuario = async (objetoUsuario) => {
   });
 };
 
-formulario.addEventListener("submit", (e) => {
+formulario.addEventListener("submit",async (e) => {
   e.preventDefault();
 
-  // const nomeUsuario = formulario.elements['nomeUsuario'].value;
-  // const emailUsuario = formulario.elements['emailUsuario'].value;
-  // const fotoUsuario = formulario.elements['fotoUsuiario'].value;
+  const nomeUsuario = formulario.elements['nomeUsuario'].value;
+  const emailUsuario = formulario.elements['emailUsuario'].value;
 
+  document.querySelector('.nomeUsuario').innerText = nomeUsuario
+  document.getElementById('fotoUsuario').src = fotoUsuario
 
-  // const objetoUsuario = {
-  //     fotoUsuario, 
-  //     emailUsuario,
-  //     nomeUsuario
-  // };
-  // console.log('Nome:', nomeUsuario);
-  // console.log('Email:', emailUsuario);
-  // console.log('Foto:', fotoUsuario);
+  const objetoUsuario = {
+      fotoUsuario, 
+      emailUsuario,
+      nomeUsuario
+  };
+  console.log('Nome:', nomeUsuario);
+  console.log('Email:', emailUsuario);
+  console.log('Foto:', fotoUsuario);
 
-  // await cadastrarUsuario(objetoUsuario)
+  await cadastrarUsuario(objetoUsuario)
 
-
-  // window.location = '../index.html'
-  console.log("oi")
+  window.location = '../html/home.html'
 });
 
-// -----------------------------------------------------------------------
 
+// -------------------------------------------------------------------
 
-// const resgatarProduto = async (id) => {
-//   const produto = await gerarProduto(id)
-//   const response = await fetch(`http://localhost:3000/identidade`, {
-//       method: 'POST',
-//       headers: {
-//           'Accept': 'application/json, text/plain, */*',
-//           'Content-Type': 'application/json'
-//       },
-//       body: JSON.stringify({ 
-//         fotoUsuario, 
-//         emailUsuario,
-//         nomeUsuario
-//   })
-//   })
+const gerarProduto = async()=>{
+  let dados = await fetch(`http://localhost:3000/identidade`)
+  const ident = await dados.json() 
+  return ident
+}
 
-//   const result = await response.json()
-//   console.log(result)
+const carregarDadosidentidade = (ident)=>{
+  
+  const nomeUsuario = ident[0].nomeUsuario
+  const fotoUsuario = ident[0].fotoUsuario
 
-//   window.location.href = `../html/confirmadoProduto.html`
-//   // window.location.href = `../html/meusResgate.html?id=${id}`
+  document.querySelector('.nomeUsuario').innerText = ident.nomeUsuario
+  document.querySelector('.nomeUsuario').innerText = nomeUsuario
+  document.getElementById('fotoUsuario').src = fotoUsuario
+  carregarDadosProduto(ident)
+}
 
-// };
-
-// const handleResgateClick = async (e, id) => {
-//   e.preventDefault()
-
-//   const produto = await gerarProduto(id)
-//   carregarDadosProduto(produto)
-
-//   await resgatarProduto(id)
-// }
-
-// document.addEventListener('DOMContentLoaded', async () => {
-//   const parametros = window.location.search
-//   const objetoProduto = new URLSearchParams(parametros)
-//   const id = objetoProduto.get('id')
-
-//   const produto = await gerarProduto(id)
-//   carregarDadosProduto(produto)
-
-//   const botaoResgate = document.querySelector('.resgatarProduto')
-//   botaoResgate.addEventListener('click', (e) => handleResgateClick(e, id))
-// })
+const carregarIdent = async () => {
+  const ident = await gerarProduto()
+  carregarDadosidentidade(ident);
+}
+carregarIdent();

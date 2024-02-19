@@ -15,12 +15,11 @@ const gerarProduto = async(id)=>{
 const carregarDadosProduto = (produto)=>{
     document.querySelector('#imagemProduto').src = `./${produto.imagem}`
     document.querySelector('#titulo').innerText = produto.title
-    // document.querySelector('').value = produto.joias
+    document.querySelector('.qntDiamantesCarg').innerText = produto.joias
 }
 
 const carregarProduto = async ()=>{
     const parametros = window.location.search
-    // console.log(parametros)
 
     const objetoProduto = new  URLSearchParams(parametros)
     const  id = objetoProduto.get('id')

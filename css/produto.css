@@ -8,19 +8,18 @@
 body {
     font-family: "Karla", sans-serif;
     font-family: "Roboto", sans-serif;
-    }
+}
 
 .header {
-
     height: 15em;
     background-size: cover;    
 }
 .headerInfor{
     display: flex;
     justify-content: space-between;
-    align-items: center;    
-    padding: 50px;
-    margin: 0 150px;
+    align-items: center;
+    padding: 30px;
+    margin: 0 120px;
 }
 .d-foto {
     display: flex;
@@ -29,15 +28,17 @@ body {
 }
 
 .foto {
-    width: 70px;
-    height: 70px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    border: 1px solid #EEEEEE;
-    margin-right: 20px; 
+    margin-right: 16px; 
 }
 .headerInfor h3{
-    color: #502B6B;
+    width: 600px;
+    font-family: "Sora", sans-serif;
+    line-height: 36px;
     font-size: 20px;
+    color: #502B6B;
 }
 
 nav ul {
@@ -56,7 +57,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: #000;
+    color:#000;
     text-decoration: none;
     padding: 15px 20px;
     font-size: 20px;
@@ -66,14 +67,13 @@ nav ul li a:hover {
     color: #7290cd;
 }
 
-/* ----------------------------------------------------------- */
+/* --------------------------------- */
 
 .inforProdutos{
     margin: 0 100px;
     display: flex;
 }
-
-.imagemProduto img{
+.imagemProduto{
     width:450px ;
     height:400px ;
 }
@@ -115,9 +115,9 @@ nav ul li a:hover {
     background: #502B6B;
     color: #fff;
     margin-top: 25px;
-    width: 300px;
-    height: 80px;
-    border-radius: 12px;
+    width: 270px;
+    height: 72px;
+    border-radius: 16px;
     border: none;
     font-size: 20px;
 }
