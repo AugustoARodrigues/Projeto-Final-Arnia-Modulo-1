@@ -125,6 +125,55 @@
       "title": "Bicicleta South New R06 24 Marchas",
       "imagem": "../imagens/fone de ouvido (2).png",
       "joias": "5"
+    },
+    {
+      "id": "87eb",
+      "productId": "8",
+      "title": "Headphone W820BT Bluetooth over-ear edifier",
+      "imagem": "../imagens/fone de ouvido (2).png",
+      "joias": "2"
+    },
+    {
+      "id": "dda2",
+      "productId": "10",
+      "title": "Headphone W820BT Bluetooth over-ear edifier",
+      "imagem": "../imagens/fone de ouvido (2).png",
+      "joias": "2"
+    },
+    {
+      "id": "1433",
+      "productId": "6",
+      "title": "Headphone W820BT Bluetooth over-ear edifier",
+      "imagem": "../imagens/fone de ouvido (2).png",
+      "joias": "2"
+    },
+    {
+      "id": "fd18",
+      "productId": "1",
+      "title": "Headphone W820BT Bluetooth over-ear edifier",
+      "imagem": "../imagens/fone de ouvido (2).png",
+      "joias": "2"
+    },
+    {
+      "id": "88f4",
+      "productId": "3",
+      "title": "Mouse Pad Gamer com Led",
+      "imagem": "../imagens/fone de ouvido (2).png",
+      "joias": "4"
+    },
+    {
+      "id": "0055",
+      "productId": "8",
+      "title": "Headphone W820BT Bluetooth over-ear edifier",
+      "imagem": "../imagens/fone de ouvido (2).png",
+      "joias": "2"
+    },
+    {
+      "id": "3108",
+      "productId": "5",
+      "title": "Headphone W820BT Bluetooth over-ear edifier",
+      "imagem": "../imagens/fone de ouvido (2).png",
+      "joias": "2"
     }
   ],
   "identidade": [
@@ -149,6 +198,38 @@
     {
       "id": "09c5",
       "emailUsuario": "flordeoliveira01@gmail.com"
+    },
+    {
+      "id": "8b98",
+      "emailUsuario": "augustomedaar@gmail.com"
+    },
+    {
+      "id": "664b",
+      "emailUsuario": "augustomedaar@gmail.com"
+    },
+    {
+      "id": "3d20",
+      "emailUsuario": "flordeoliveira01@gmail.com"
+    },
+    {
+      "id": "3ceb",
+      "emailUsuario": "augustomedaar@gmail.com"
+    },
+    {
+      "id": "8ba9",
+      "emailUsuario": "augustomedaar@gmail.com"
+    },
+    {
+      "id": "d28e",
+      "emailUsuario": "augustomedaar@gmail.com"
+    },
+    {
+      "id": "eb86",
+      "emailUsuario": "augustomedaar@gmail.com"
+    },
+    {
+      "id": "68a9",
+      "emailUsuario": "augustomedaar@gmail.com"
     }
   ]
 }
