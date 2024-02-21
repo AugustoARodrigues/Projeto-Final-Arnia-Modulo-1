@@ -1,6 +1,6 @@
 
 const gerarProduto = async (id) => {
-    const response = await fetch(`http://localhost:3000/produtos/${id}`)
+    const response = await fetch(`https://projeto-arnia-final.onrender.com/produtos/${id}`)
     const produto = await response.json()
     return produto
 };
@@ -16,7 +16,7 @@ const carregarDadosProduto = (produto) => {
 
 const resgatarProduto = async (id) => {
     const produto = await gerarProduto(id)
-    const response = await fetch(`http://localhost:3000/resgate`, {
+    const response = await fetch(`https://projeto-arnia-final.onrender.com/resgate`, {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',

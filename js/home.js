@@ -5,7 +5,7 @@ const irProduto = (id) => {
 
 
 const aquiPost= async ()=>{
-    const buscarApiHttp = await fetch('http://localhost:3000/produtos')
+    const buscarApiHttp = await fetch('https://projeto-arnia-final.onrender.com/produtos')
     const produdos = await buscarApiHttp.json()
 
     return  produdos
@@ -43,7 +43,7 @@ carregarDadosProduto()
 // --------------------------------------------------------------------
 
 const gerarProduto = async()=>{
-    let dados = await fetch(`http://localhost:3000/identidade`)
+    let dados = await fetch(`https://projeto-arnia-final.onrender.com/identidade`)
     const ident = await dados.json() 
     return ident
 }

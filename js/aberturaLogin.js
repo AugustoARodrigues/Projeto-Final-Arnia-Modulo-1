@@ -22,7 +22,7 @@ botaoAbertura.addEventListener('click', divVisualizar)
 const botaoLogin = document.querySelector('#botaoLogin');
 
 const saveEmailNoAPI = async (emailUsuario) => {
-    await fetch('http://localhost:3000/identidade', {
+    await fetch('https://projeto-arnia-final.onrender.com/identidade', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',

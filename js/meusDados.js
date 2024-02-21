@@ -19,7 +19,7 @@ const sair = () => {
 let formulario = document.getElementById('formularioCadastro')
 
 const cadastrarUsuario = async (objetoUsuario) => { 
-  await fetch('http://localhost:3000/identidade', {
+  await fetch('https://projeto-arnia-final.onrender.com/identidade', {
       method: 'POST',
       headers: {
           'Accept': 'application/json, text/plain, */*',
@@ -56,7 +56,7 @@ formulario.addEventListener("submit",async (e) => {
 // -------------------------------------------------------------------
 
 const gerarProduto = async()=>{
-  let dados = await fetch(`http://localhost:3000/identidade`)
+  let dados = await fetch(`https://projeto-arnia-final.onrender.com/identidade`)
   const ident = await dados.json() 
   return ident
 }

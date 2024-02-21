@@ -6,7 +6,7 @@ const voltarHome = () => {
 // primeira parte
 
 const gerarProduto = async(id)=>{
-    let dados = await fetch(`http://localhost:3000/produtos/${id}`)
+    let dados = await fetch(`https://projeto-arnia-final.onrender.com/produtos/${id}`)
     const produto = await dados.json() 
       // console.log(produto)
     return produto
